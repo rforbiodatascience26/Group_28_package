@@ -9,6 +9,7 @@
 make_codons <- function(sequence, start = 1){
   #counting number of characters in string
   seq_length <- nchar(sequence)
+
   #pulling the string given start and end postion
   codons <- substring(sequence,
                       #the first position of each substring, from start to the end(start of last codon) going by 3(codons)

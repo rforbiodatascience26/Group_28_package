@@ -15,3 +15,6 @@ rna
 \description{
 t_transcribe
 }
+\examples{
+t_transcribe("AACCGTTGGACT")
+}

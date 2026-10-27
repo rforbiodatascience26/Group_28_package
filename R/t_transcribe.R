@@ -5,7 +5,7 @@
 #' @returns rna
 #' @export
 #'
-#' @examples
+#' @examples t_transcribe("AACCGTTGGACT")
 t_transcribe <- function(dna){
   rna <- gsub("T", "U", dna)
   return(rna)

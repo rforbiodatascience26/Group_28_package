@@ -28,7 +28,6 @@ Description: Replicating the central dogma of molecular biology
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-<<<<<<< HEAD
 Suggests: 
     knitr,
     rmarkdown,
