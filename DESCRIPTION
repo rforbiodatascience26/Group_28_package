@@ -22,7 +22,7 @@ Authors@R:
     person(given = "Michele",
            family = "Spanu",
            role = "aut",
-           email = "s263475@dtu.dk"),
+           email = "s263475@dtu.dk")
            )
 Description: Replicating the central dogma of molecular biology
 License: What license is it under?
@@ -31,3 +31,9 @@ LazyData: true
 Depends: 
     R (>= 3.5)
 RoxygenNote: 7.3.2
+Imports: 
+    ggplot2,
+    stringr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
