@@ -16,7 +16,7 @@ Authors@R:
            role = "aut",
            email = "s260735@dtu.dk"),    
     person(given = "Roque",
-           family = "Lisazoain",
+           family = "Lizasoain",
            role = "aut",
            email = "s263514@dtu.dk"),
     person(given = "Michele",
@@ -28,3 +28,9 @@ Description: Replicating the central dogma of molecular biology
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 3.5)
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
