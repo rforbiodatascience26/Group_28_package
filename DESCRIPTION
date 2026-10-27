@@ -1,0 +1,30 @@
+Package: group28package
+Type: Package
+Title: Central dogma (Group_28_package)
+Version: 0.1.0
+Authors@R:
+  c(person(given = "Teodora",
+           family = "Ruso Vidal",
+           role = c("aut", "cre"), # There must be a "cre", but there can only be one
+           email = "s263487@dtu.dk"), 
+    person(given = "Pilar",
+           family = "Goñi",
+           role = "aut",
+           email = "s263489@dtu.dk"),
+    person(given = "Deborah",
+           family = "Saren",
+           role = "aut",
+           email = "s260735@dtu.dk"),    
+    person(given = "Roque",
+           family = "Lisazoain",
+           role = "aut",
+           email = "s263514@dtu.dk"),
+    person(given = "Michele",
+           family = "Spanu",
+           role = "aut",
+           email = "s263475@dtu.dk"),
+           )
+Description: Replicating the central dogma of molecular biology
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
