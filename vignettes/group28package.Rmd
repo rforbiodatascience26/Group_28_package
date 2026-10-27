@@ -1,0 +1,29 @@
+---
+title: "group28package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{group28package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+<https://github.com/rforbiodatascience26/Group_28_package>
+
+```{r setup}
+library(group28package)
+```
+
+Our package consists of five functions that work together to carry out biology's central dogma: from DNA to RNA, then to translation.
+
+```{r}
+random_dna()
+```
+
+The first function: random_dna generates a random DNA sequence of a specified length. It randomly samples the four nucleotide bases (A, T, G, C) with replacement and concatenates them into a single continuous string. The function t_transcribe carries out the step of transcription. It converts a provided DNA sequence into its corresponding RNA transcript by utilizing the gsub() function to search the input string and substitute every "T" (Thymine) nucleotide with a "U" (Uracil) nucleotide, returning the newly formatted RNA string. The function make_codons takes a given string and divides it into groups of three, so the output is the rna sequence ready for translation. This function takes the output of the t_transcribe to specify the codons of the rna messenger sequence. The codons_to_peptide function carries out the biological step of translation. It reads an input string (already separated into threes) and utilizes a predetermined codon table stored within the package to convert each codon into its corresponding amino acid residue, generating a peptide sequence. Lastly the aa_frequency_barplot, given a protein sequence (string) returns a gg plot barplot with the absolute frequencies of each amino acid (aa) present in the sequence given. All of the functions can be piped together to simulate the entire Central Dogma of molecular biology. This package is ideal for working with DNA or RNA sequences. For example, the results from a PCR could be easily translated into peptides to explore their properties as proteins. In the future, we could explore including additional functions to analyze the resulting peptide sequences. For example, functions to calculate the molecular weight, determine the isoelectric point (pI), or evaluate the hydrophobicity index, which are essential metrics for characterizing protein behavior in the laboratory and also are a great insight along wit the barplot.
